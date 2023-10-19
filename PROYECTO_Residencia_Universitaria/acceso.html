@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Acceso</title>
+    <link rel="stylesheet"  href="estilo5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="iniciarsesion.html">Cerrar sesión</a>
+            <a href="registrarse.html">Salir</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Control de Acceso a la residencia</h1>
+        <div class="access-form">
+            <label for="codigo">Código de Acceso:</label>
+            <input type="password" id="codigo" required>
+            <button id="accederBtn">Acceder</button>
+        </div>
+        <div id="mensaje" class="mensaje"></div>
+    </div>
+    <script src="validacion4.js"></script>
+</body>
+</html>

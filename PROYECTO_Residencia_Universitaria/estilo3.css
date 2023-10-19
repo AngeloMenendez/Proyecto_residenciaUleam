@@ -1,0 +1,149 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333; 
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(100deg, #6c3483, #58D68D);
+    height: 80vh;
+}
+
+
+main {
+    width: 80%;
+    max-width: 400px;
+    margin: 25px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background: #f8f8f8; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.formulario__label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333; 
+}
+
+.formulario__grupo-input {
+    position: relative;
+}
+
+.formulario__input {
+    width: 100%;
+    background: transparent;
+    border: 2px solid #035f22; 
+    color: #333; 
+    font-size: 16px;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.formulario__input:focus {
+    border-color: #6c3483; 
+    box-shadow: 0 0 5px rgba(54, 17, 119, 0.5); 
+}
+
+.formulario__input-error {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #ee0f0f; 
+    display: none;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+.formulario__span {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.formulario__grupo-terminos {
+    text-align: center;
+}
+
+.formulario__grupo-terminos, .formulario__mensaje, .formulario__grupo-btn-enviar {
+    grid-column: 1;
+}
+
+.formulario__mensaje {
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #ee0f0f; 
+    color: #fff; 
+    text-align: center;
+    display: none;
+}
+
+.formulario__mensaje-activo {
+    display: block;
+}
+
+.formulario__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__btn {
+    width: 100%;
+    padding: 10px;
+    background: #6c3483; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.formulario__btn:hover {
+    background: #4a1960; 
+}
+
+.formulario__mensaje-exito {
+    font-size: 18px;
+    color: #308325; 
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo { 
+    display: block;
+}
+.formulario-titulo {
+    text-align: center;
+    color: #6c3483;
+    font-size: 24px; 
+    margin: 20px 0; 
+}
+.Registrarse{
+    margin: 7px 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+ }
+ .Registrarse a{
+    color: blue;
+    text-decoration: none
+ }
+ .Registrarse a:hover{
+    text-decoration: underline;
+ }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Datos</title>
+    <link rel="stylesheet" type="text/css" href="estilo4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="iniciarsesion.html">Cerrar sesión</a>
+            <a href="registrarse.html">Salir</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Registra tus datos en la residencia</h1>
+        <form id="clienteForm">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha de Nacimiento:</label>
+                <input type="number,text" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="cedula">Cédula:</label>
+                <input type="number" id="cedula" name="cedula" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Número de Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="institucion">Institución:</label>
+                <input type="text" id="institucion" name="institucion" required>
+            </div>
+            <div class="form-group">
+                <label for="numeroresi">Número de cuarto en residencia:</label>
+                <input type="number" id="numeroresi" name="numeroresi" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Registrar Datos</button>
+            </div>
+        </form>
+        
+        <h2>Estudiantes Registrados</h2>
+        <table id="clientesTable">
+            <thead>
+                <tr>
+                    <th>Nombres</th>
+                    <th>Fecha Nacimiento</th>
+                    <th>Cédula</th>
+                    <th>Correo Electrónico</th>
+                    <th>Número de Teléfono</th>
+                    <th>Institución</th>
+                    <th>Número de cuarto</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="validacion3.js"></script>
+</body>
+</html>
